@@ -14,13 +14,13 @@ Streamlit: For creating an interactive and user-friendly web app. <br>
 
 ### 🔍 Key Steps
 Data Collection & Preprocessing <br>
-Data Source: A dataset containing features like mean, standard deviation, skewness, and kurtosis of pulsar signals. <br>
-Data Cleaning: Checked for missing values and outliers, removing or imputing data where necessary. <br>
-Feature Engineering: Focused on statistical features critical for pulsar classification, ensuring high-quality input for model training. <br>
+* Data Source: A dataset containing features like mean, standard deviation, skewness, and kurtosis of pulsar signals. <br>
+* Data Cleaning: Checked for missing values and outliers, removing or imputing data where necessary. <br>
+* Feature Engineering: Focused on statistical features critical for pulsar classification, ensuring high-quality input for model training. <br>
 
 Exploratory Data Analysis (EDA) <br>
-Conducted visual analysis using scatter plots and histograms to understand the distributions and relationships between features. <br>
-Visualized correlations using heatmaps to confirm the importance of various features in distinguishing pulsar signals from noise. <br>
+* Conducted visual analysis using scatter plots and histograms to understand the distributions and relationships between features. <br>
+* Visualized correlations using heatmaps to confirm the importance of various features in distinguishing pulsar signals from noise. <br>
 
 Declare Feature Vector and Target Variable <br>
 Specified the feature vector (input variables) and target variable (pulsar vs. non-pulsar). <br>
