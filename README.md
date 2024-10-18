@@ -82,4 +82,4 @@ The Pulsar Star Classification app, built using Streamlit, allows users to input
 
 
 Discover the Pulsar Star Classification app! This Streamlit application leverages data science to help users classify pulsar stars based on their statistical features.
-Visit the live app here: [Link to your app].
+Visit the live app here: https://pulsarstarclassification-phj6xt8f4nda4thcbwwt87.streamlit.app/
