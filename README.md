@@ -13,72 +13,57 @@ Libraries: <br>
 Streamlit: For creating an interactive and user-friendly web app. <br>
 
 ### 🔍 Key Steps
-Data Collection & Preprocessing <br>
+1.Data Collection & Preprocessing <br>
 * Data Source: A dataset containing features like mean, standard deviation, skewness, and kurtosis of pulsar signals. <br>
 * Data Cleaning: Checked for missing values and outliers, removing or imputing data where necessary. <br>
 * Feature Engineering: Focused on statistical features critical for pulsar classification, ensuring high-quality input for model training. <br>
 
-Exploratory Data Analysis (EDA) <br>
+2.Exploratory Data Analysis (EDA) <br>
 * Conducted visual analysis using scatter plots and histograms to understand the distributions and relationships between features. <br>
 * Visualized correlations using heatmaps to confirm the importance of various features in distinguishing pulsar signals from noise. <br>
 
-Declare Feature Vector and Target Variable <br>
-Specified the feature vector (input variables) and target variable (pulsar vs. non-pulsar). <br>
+3.Declare Feature Vector and Target Variable <br>
+* Specified the feature vector (input variables) and target variable (pulsar vs. non-pulsar). <br>
 
-Split Data into Separate Training and Test Set <br>
-Divided the dataset into training and testing subsets to evaluate model performance. <br>
+4.Split Data into Separate Training and Test Set <br>
+* Divided the dataset into training and testing subsets to evaluate model performance. <br>
 
-Feature Scaling <br>
-Applied feature scaling techniques to ensure consistent ranges for model inputs, enhancing performance. <br>
+5.Feature Scaling <br>
+* Applied feature scaling techniques to ensure consistent ranges for model inputs, enhancing performance. <br>
 
-Run SVM with Default Hyperparameters <br>
-Implemented the SVM model using default settings, achieving an accuracy score of 0.9827. <br>
+6.Run SVM with Default Hyperparameters <br>
+* Implemented the SVM model using default settings, achieving an accuracy score of 0.9827. <br>
 
-Run SVM with Different Kernels <br>
+7.Run SVM with Different Kernels <br>
 RBF Kernel: <br>
-With C=100.0: Accuracy of 0.9832. <br>
-With C=1000.0: Accuracy of 0.9816. <br>
+* With C=100.0: Accuracy of 0.9832. <br>
+* With C=1000.0: Accuracy of 0.9816. <br>
 Linear Kernel: <br>
-With C=1.0: Accuracy of 0.9830. <br>
-With C=100.0: Accuracy of 0.9832. <br>
-With C=1000.0: Accuracy of 0.9832. <br>
+* With C=1.0: Accuracy of 0.9830. <br>
+* With C=100.0: Accuracy of 0.9832. <br>
+* With C=1000.0: Accuracy of 0.9832. <br>
 Polynomial Kernel: <br>
-With C=1.0: Accuracy of 0.9807. <br>
+* With C=1.0: Accuracy of 0.9807. <br>
 Sigmoid Kernel: <br>
-With C=1.0: Accuracy of 0.8858. <br>
-With C=100.0: Accuracy of 0.8855. <br>
+* With C=1.0: Accuracy of 0.8858. <br>
+* With C=100.0: Accuracy of 0.8855. <br>
 
-Model Evaluation <br>
+8.Model Evaluation <br>
 Confusion Matrix: <br>
-
-lua
-Copy code
 [[3289   17]
  [  44  230]]
+ 
 True Positives (TP): 3289
 True Negatives (TN): 230
 False Positives (FP): 17
 False Negatives (FN): 44
-Classification Metrics:
 
-vbnet
-Copy code
-Precision: 0.9949  
-Recall: 0.9868  
-F1 Score (0): 0.99  
-F1 Score (1): 0.88  
-Accuracy: 0.9830  
 
-Classification Error: 0.0170  
-Specificity: 0.9312  
 GridSearch CV Best Score: 0.9793
-
 Best Parameters:
-
 {'C': 10, 'gamma': 0.3, 'kernel': 'rbf'}
-Chosen Estimator:
 
-SVC(C=10, gamma=0.3)
+* Chosen Estimator : SVC(C=10, gamma=0.3)
 
 ### 📊 Key Findings
 Model Results: <br>
